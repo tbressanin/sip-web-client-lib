@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "commonjs",
+        "outDir": "dist",
+        "lib": [
+            "es2020",
+            "es2020.promise",
+            "es2020.bigint",
+            "es2020.string"
+        ],
+        "strict": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+    }
+}

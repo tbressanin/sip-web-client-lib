@@ -1,14 +1,26 @@
 {
-  "name": "55tec_sip",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "jssip": "^3.5.11"
-  }
+    "name": "55tec_sip",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./dist/index.js",
+    "scripts": {
+        "clean": "rm -Rf dist/",
+        "build": "tsc -p ./tsconfig.json",
+        "start": "npm run build",
+        "watch": "tsc-watch"
+    },
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "@types/browserify": "latest",
+        "@types/kafkajs": "^1.9.0",
+        "browserify": "latest",
+        "inversify": "^5.0.1",
+        "jssip": "^3.5.11",
+        "kafkajs": "^1.14.0"
+    },
+    "devDependencies": {
+        "@tsconfig/recommended": "^1.0.1"
+    }
 }
