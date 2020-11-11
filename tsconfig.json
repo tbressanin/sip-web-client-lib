@@ -9,8 +9,13 @@
             "es2020.bigint",
             "es2020.string"
         ],
+        "types": [
+            "node",
+            "reflect-metadata"
+        ],
         "strict": true,
         "sourceMap": true,
         "esModuleInterop": true,
+        "experimentalDecorators": true
     }
 }

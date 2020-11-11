@@ -15,10 +15,12 @@
     "dependencies": {
         "@types/browserify": "latest",
         "@types/kafkajs": "^1.9.0",
+        "@types/node": "^14.14.7",
         "browserify": "latest",
         "inversify": "^5.0.1",
         "jssip": "^3.5.11",
-        "kafkajs": "^1.14.0"
+        "kafkajs": "^1.14.0",
+        "reflect-metadata": "^0.1.13"
     },
     "devDependencies": {
         "@tsconfig/recommended": "^1.0.1"
