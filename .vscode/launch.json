@@ -3,10 +3,15 @@
         {
             "name": "Launch Program",
             "type": "node",
+            "env": {
+                "NODE_ENV": "dev"
+            },
             "program": "${workspaceFolder}/src/index.ts",
             "preLaunchTask": "npm: build",
             "request": "launch",
-            "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
             "skipFiles": [
                 "<node_internals>/**"
             ],
