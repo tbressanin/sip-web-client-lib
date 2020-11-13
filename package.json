@@ -4,10 +4,10 @@
     "description": "",
     "main": "./dist/index.js",
     "scripts": {
+        "build": "rm -Rf dist && npm run build-tsc && webpack --config webpack.config.js",
         "clean": "rm -Rf dist/",
-        "build-web": "npm run build && webpack --config wepack.js",
-        "build": "tsc -p ./tsconfig.json",
-        "start:dev": "npm run build",
+        "build-tsc": "tsc -p ./tsconfig.json",
+        "start:dev": "npm run build-tsc",
         "watch": "tsc-watch"
     },
     "author": "",
