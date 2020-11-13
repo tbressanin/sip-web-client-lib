@@ -7,7 +7,7 @@
                 "NODE_ENV": "dev"
             },
             "program": "${workspaceFolder}/src/index.ts",
-            "preLaunchTask": "npm: build",
+            "preLaunchTask": "npm: start:dev",
             "request": "launch",
             "outFiles": [
                 "${workspaceFolder}/dist/**/*.js"
