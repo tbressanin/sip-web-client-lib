@@ -1,8 +1,10 @@
 {
     "compilerOptions": {
         "target": "es2020",
-        "module": "commonjs",
+        "module": "CommonJS",
         "outDir": "dist",
+        "allowJs": true,
+        "noImplicitAny": true,
         "lib": [
             "es2020",
             "es2020.promise",
