@@ -3,8 +3,21 @@
         "target": "es2020",
         "module": "CommonJS",
         "outDir": "dist",
+        "baseUrl": "./src",
+        "paths": {
+            "@interfaces": [
+                "./interfaces"
+            ],
+            "@services": [
+                "./services"
+            ],
+            "@env": [
+                "./env"
+            ],
+        },
         "allowJs": true,
         "noImplicitAny": true,
+        "resolveJsonModule": true,
         "lib": [
             "es2020",
             "es2020.promise",
