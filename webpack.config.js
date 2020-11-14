@@ -1,5 +1,4 @@
 const path = require('path');
-
 module.exports = {
     mode: 'production',
     entry: {
@@ -7,12 +6,16 @@ module.exports = {
     },
     plugins: [],
     module: {
-        rules: [
-            {
-                test: /\.tsx?$/,
-                use: 'ts-loader',
-            },
-        ],
+        rules: [{
+            use: [
+                {
+                    loader: 'ts-loader',
+                    options: {
+                        transpileOnly: true
+                    }
+                }
+            ]
+        }],
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
@@ -24,6 +27,7 @@ module.exports = {
         libraryTarget: 'var',
         libraryExport: 'default'
     },
+
     optimization: {
         minimize: true,
         providedExports: true,

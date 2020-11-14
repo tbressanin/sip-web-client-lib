@@ -1,23 +1,22 @@
 {
-    "compilerOptions": {
-        "target": "es2020",
+    "compilerOptions": { 
         "module": "CommonJS",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": false,
+        "noImplicitAny": false,
+        "preserveConstEnums": true,
+        "noEmitHelpers": false,
+        "noImplicitReturns": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "skipLibCheck": true,
+        "target": "es2020",
         "outDir": "dist",
         "baseUrl": "./src",
-        "paths": {
-            "@interfaces": [
-                "./interfaces"
-            ],
-            "@services": [
-                "./services"
-            ],
-            "@env": [
-                "./env"
-            ],
-        },
-        "allowJs": true,
-        "noImplicitAny": true,
-        "resolveJsonModule": true,
+        "allowJs": true,   
         "lib": [
             "es2020",
             "es2020.promise",
@@ -28,9 +27,5 @@
             "node",
             "reflect-metadata"
         ],
-        "strict": true,
-        "sourceMap": true,
-        "esModuleInterop": true,
-        "experimentalDecorators": true
     }
 }
