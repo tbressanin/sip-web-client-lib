@@ -1,16 +1,14 @@
+import * as JsSIP from 'jssip';
 export interface ISipService {
-    init: (config?: SipOptions) => boolean;
+    init: (config: SipOptions) => void;
+    getSipSession: () => JsSIP.UA;
+    getOptions: () => SipOptions;
 }
-// SIP_LABEL=5035
-// SIP_USER=100035
-// SIP_PASSWORD=GrjzHLgH3iNXL2ME
-// SIP_REALM=siphomologa.55pbx.com
-// SIP_WSS=wss://sip1.55pbx.com:8089/ws
 
-export type SipOptions = {
+export interface SipOptions {
     label?: string;
     realm: string;
     user: string;
     password: string;
-    wsuri: string;   
+    wsuri: string;
 }

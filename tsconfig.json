@@ -1,31 +1,33 @@
 {
-    "compilerOptions": { 
-        "module": "CommonJS",
+    "compilerOptions": {
         "moduleResolution": "node",
-        "allowSyntheticDefaultImports": false,
-        "noImplicitAny": false,
-        "preserveConstEnums": true,
-        "noEmitHelpers": false,
-        "noImplicitReturns": true,
-        "noUnusedParameters": true,
-        "noUnusedLocals": true,
-        "sourceMap": true,
+        "esModuleInterop": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "skipLibCheck": true,
-        "target": "es2020",
-        "outDir": "dist",
+        "inlineSourceMap": true,
+        "noFallthroughCasesInSwitch": true,
+        "target": "es2015",
+        "outDir": "./dist",
         "baseUrl": "./src",
-        "allowJs": true,   
+        "strict": true,
+        "module": "commonjs",
+        "rootDir": "./src",
         "lib": [
-            "es2020",
-            "es2020.promise",
-            "es2020.bigint",
-            "es2020.string"
+            "DOM",
+            "ES2015",
+        ],
+        "typeRoots": [
+            "node_modules/@types"
         ],
         "types": [
+            "reflect-metadata",
             "node",
-            "reflect-metadata"
         ],
-    }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
 }
