@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "inlineSourceMap": true,
+        "noFallthroughCasesInSwitch": true,
+        "target": "es2015",
+        "outDir": "./dist",
+        "baseUrl": "./src",
+        "strict": true,
+        "module": "commonjs",
+        "rootDir": "./src",
+        "lib": [
+            "DOM",
+            "ES2015",
+        ],
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "types": [
+            "reflect-metadata",
+            "node",
+        ],
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}

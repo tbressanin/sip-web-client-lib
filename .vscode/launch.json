@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Launch Program",
+            "type": "node",
+            "env": {
+                "NODE_ENV": "dev"
+            },
+            "program": "${workspaceFolder}/src/index.ts",
+            "preLaunchTask": "npm: start:dev",
+            "request": "launch",
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+        }
+    ]
+}
